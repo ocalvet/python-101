@@ -1,7 +1,7 @@
-str_var = "Hello"
+str_var = "hello"
 
-print(str_var + " World");
+print(str_var + " world")
 
 cap_str = str_var.capitalize()
 
-print(cap_str);
+print(cap_str)
