@@ -16,3 +16,7 @@ def get_help():
 @app.route("/help", methods=["POST"])
 def post_help():
     return json.dumps({"text": "Posting some help!"})
+
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
