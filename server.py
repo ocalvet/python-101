@@ -1,11 +1,13 @@
 from flask import Flask
 import json
+from api_service import ApiService
 app = Flask(__name__)
 
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    service = ApiService()
+    return service.say()
 
 
 @app.route("/help", methods=["GET"])
